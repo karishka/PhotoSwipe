@@ -16,7 +16,7 @@ var tapTimer,
 				pointerType:pointerType || 'touch'
 			};
 
-		e.initCustomEvent( 'pswpTap', true, true, eDetail );
+		e.initCustomEvent( 'pswpTap', false, true, eDetail );
 		origEvent.target.dispatchEvent(e);
 	};
 
